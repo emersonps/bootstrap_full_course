@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- define a viewport-->
+        <title>Curso de Bootstrap 3</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- Para resolver problemas de Encoding -->
+        <meta charset="utf-8">
+        <!-- adicionar CSS Bootstrap localmente -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+         <!-- CSS personalizado -->
+        <link href="css/estilo.css" rel="stylesheet" media="screen">
+	</head>
+	<body>
+       
+        <h1>ANINHAMENTO</h1>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="row">
+                        <div class="col-xs-4">1</div>
+                        <div class="col-xs-4">2</div>
+                        <div class="col-xs-4">3</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-12">4</div>
+                        <div class="col-xs-4 col-sm-12">5</div>
+                        <div class="col-xs-4 col-sm-12">6</div>
+                    </div>
+                </div>  
+
+                <div class="col-xs-6">
+                    texto2
+                </div>  
+            </div>
+
+            <hr />
+
+            <div class="row">
+                <div class="col-xs-4">
+                    4 Posições
+                </div>
+                <div class="col-xs-6 col-xs-offset-2">Quero ocupar as 6 últimas colunas</div>
+            </div>
+            
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1">
+                    10 espações centrais
+                </div>
+            </div>
+            
+            <hr />
+            
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-10 col-md-offset-2">
+                                    Teste de Aninhamento
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>    
+
+        
+
+
+        <script src="js/jquery-3.2.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script> 
+	</body>
+</html>
