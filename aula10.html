@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- define a viewport-->
+        <title>Curso de Bootstrap 3</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- Para resolver problemas de Encoding -->
+        <meta charset="utf-8">
+        <!-- adicionar CSS Bootstrap localmente -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+         <!-- CSS personalizado -->
+        <link href="css/estilo.css" rel="stylesheet" media="screen">
+	</head>
+	<body>
+        <h1>Formulários</h1>
+       
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                   <form class="form-horizontal">
+                        <div class="form-group has-success">
+                            <label for="nome" class="sr-only">Nome Completo</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Nome:"> 
+                        </div>
+                        
+                        <div class="form-group has-success has-feedback">
+                            <label for="nome" class="col-xs-2 control-label">Nome Completo</label>
+                            <div class="col-xs-10">
+                                <input type="text" class="form-control" id="nome" placeholder="Nome:"/> 
+                                <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group has-warning has-feedback">
+                            <label for="nome" class="col-xs-2 control-label">Nome Completo</label>
+                            <div class="col-xs-10">
+                                <input type="text" class="form-control" id="nome" placeholder="Nome:"/> 
+                                <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+                            </div>
+                        </div>
+
+                         <div class="form-group has-error has-feedback">
+                            <label for="nome" class="col-xs-2 control-label">Nome Completo</label>
+                            <div class="col-xs-10">
+                                <input type="text" class="form-control" id="nome" placeholder="Nome:"/> 
+                                <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group has-warning form-group-lg">
+                            <label for="nome" class="control-label">Tipo</label>
+                            <select class="form-control">
+                                <option>Pessoa Física</option>
+                                <option>Pessoa Jurídica</option>
+                            </select>
+                        </div>
+                        <div class="form-group has-warning form-group-sm">
+                            <label for="nome" class="control-label">Tipo</label>
+                            <select class="form-control">
+                                <option>Pessoa Física</option>
+                                <option>Pessoa Jurídica</option>
+                            </select>
+                        </div>
+                        <div class="form-group has-error">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" class="form-control" id="nome" /> 
+                            <span class="help-block">Texto de ajuda - 111.111.111-11</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <form class="form-horizontal"><!-- Somente com essa classe podemos habilitar classes de grid no formulário-->
+                        <div class="form-group has-success">
+                            <label for="tipo" class="col-xs-2 control-label">Tipo:</label>
+                            <div class="col-xs-10">
+                                <select class="form-control">
+                                    <option>Pessoa Física</option>
+                                    <option>Pessoa Jurídica</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-xs-2 control-label">Seu e-mail</label>
+                            <div class="col-xs-10">
+                                <p class="form-control-static">emersonline@gmail.com</p>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">                           
+                            <div class="col-xs-offset-2 col-xs-10">
+                                <button type="submit" class="btn btn-success">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row">
+                <form class="form-inline">
+                    
+
+                </form>
+            </div>
+
+        </div>
+
+
+        <script src="js/jquery-3.2.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script> 
+	
+    </body>
+</html>
