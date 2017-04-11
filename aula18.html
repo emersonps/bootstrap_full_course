@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Curso de Bootstrap 3</title>
+        <!-- define a viewport-->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- Para resolver problemas de Encoding -->
+        <meta charset="utf-8">
+        <!-- adicionar CSS Bootstrap localmente -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="all">
+        <!-- CSS personalizado -->
+        <link href="css/estilo.css" rel="stylesheet" media="all">
+	</head>
+	<body>
+        <h1>Input Groups</h1>
+       
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <form>
+                        <br>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon">Seu nome</span><!-- Adicionar qualquer texto ou ícone antes ou depois ou antes e depois dos componentes -->
+                            <input type="text" class="form-control" placeholder="Seu nome" />
+                        </div>
+                        <br>
+                        <div class="input-group input-group-sm">
+                            <span class="input-group-addon">@</span>
+                            <input type="text" class="form-control" placeholder="Insira seu e-mail" />
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <input type="text" class="form-control" />
+                            <span class="input-group-addon" required>CPF Obrigatório</span>
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <span class="input-group-addon" required>R$</span>
+                            <input type="text" class="form-control" />
+                            <span class="input-group-addon" required>,00</span>
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <span class="input-group-addon" required><input type="checkbox" /><!-- Use qualquer componente entre o span --></span>
+                            <input type="text" class="form-control" />
+                            <span class="input-group-addon" required>,00</span>
+                        </div>
+
+                        <br>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon"> <!-- Icone como simbolo -->
+                                <span class="glyphicon glyphicon-search"></span>
+                            </span>
+                            
+                            <input type="text" class="form-control" />
+                            
+                            <span class="input-group-btn">
+                                <button type="button" class="btn btn-primary">Buscar</button> <!-- Icone ou texto como botão -->
+                            </span>
+                       </div>
+                    </form>
+                </div>  
+
+                <div class="col-xs-12">
+                    <form>
+                        <hr />
+
+                        <div class="input-group">
+                            <input type="text" class="form-control">
+
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Selecione um estado <span class="caret"></span></button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">AM</a></li>
+                                    <li><a href="#">RS</a></li>
+                                    <li><a href="#">SC</a></li>
+                                    <li><a href="#">RJ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div> 
+                
+        <script src="js/jquery-3.2.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script> 
+	
+    </body>
+</html>

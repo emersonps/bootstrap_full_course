@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- define a viewport-->
+        <title>Curso de Bootstrap 3</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- Para resolver problemas de Encoding -->
+        <meta charset="utf-8">
+        <!-- adicionar CSS Bootstrap localmente -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="all">
+         <!-- CSS personalizado -->
+        <link href="css/estilo.css" rel="stylesheet" media="all">
+	</head>
+	<body>
+        <h1>Responsives Utilities</h1>
+       
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 ">
+                    <!-- Mudar de SCREEN para ALL na linha 10 e 12 dos links hrefs media = todos os tipos de css -->
+                    <h1 class="visible-print-block">Exibir somente na impressão da Página</h1>
+                    <h1 class="hidden-print">Exibir somente na Página</h1>
+                    <a href="#" class="btn btn-success hidden-print">Imprimir</a>
+                </div>
+                <div class="col-xs-12 bg-color-padding">
+                    <p class="bg-primary visible-xs-block">Você está na resolução XS</p>
+                    <p class="bg-success visible-md-block">Você está na resolução MD</p>
+                    <p class="bg-danger visible-sd-block">Você está na resolução SD</p>
+
+                    <a href="#" class="btn btn-default visible-md-block visible-lg-block">Acesse nossa versão mobile</a>
+
+                    <a href="#" class="btn btn-default hidden-xs">Acesse nossa versão mobile</a>
+                    <a href="#" class="btn btn-default hidden-sm">Acesse nossa versão mobile</a>
+                </div>
+
+                <div class="col-xs-12 bg-color-padding">
+                    <h1>Tipos</h1>
+
+                    <a href="#" class="btn btn-primary visible-sm-block visible-md-block">Block</a>
+                    <a href="#" class="btn btn-primary visible-sm-block visible-md-block">Block</a>
+                    <a href="#" class="btn btn-success visible-sm-inline visible-md-inline">Inline</a>
+                    <a href="#" class="btn btn-success visible-sm-inline visible-md-inline">Inline</a>
+                    <a href="#" class="btn btn-danger visible-sm-inline-block visible-md-inline-block">Inline-block</a>
+                    <a href="#" class="btn btn-danger visible-sm-inline-block visible-md-inline-block">Inline-block</a>
+
+                </div>
+            </div>
+        </div>
+        
+                
+        <script src="js/jquery-3.2.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script> 
+	
+    </body>
+</html>
