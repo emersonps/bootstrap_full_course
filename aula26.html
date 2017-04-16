@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Curso de Bootstrap 3</title>
+        <!-- define a viewport-->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- Para resolver problemas de Encoding -->
+        <meta charset="utf-8">
+        <!-- adicionar CSS Bootstrap localmente -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="all">
+        <!-- CSS personalizado -->
+        <link href="css/estilo.css" rel="stylesheet" media="all">
+	</head>
+	<body>
+        <h1>Janelas e Modais</h1>
+        <!-- Alerts tem como finalidade dar um feedback ao usuário -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="pageheader">
+                        <button type="buntton" class="btn btn-primary" data-toggle="modal" data-target="#modal01">Abrir Janela Modal</button>
+
+                        <!-- Janela Modal -->
+                        <div class="modal fade" id="modal01" role="dialog" tabindex="-1" aria-hidden="true"><!-- fade, efeito -->
+                            <div class="modal-dialog modal-lgm"><!-- modal-lg  ou modal-sm -->
+                                <div class="modal-content">
+
+                                    <div class="modal-header">                                
+                                        <button type="button" class="close" data-dismiss="modal"><!-- indica que esse elemento vai fechar uma janela modal -->
+                                            <span aria-hidden="true">&times;</span>
+                                            <span class="sr-only">Fechar Janela Modal</span>
+                                        </button>
+
+                                        <h4 class="modal-title">
+                                            Janela modal
+                                        </h4>
+                                    </div>
+
+                                    <div class="modal-body">    
+                                        <p> Conteúdo da Janela Modal </p>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- // Janela Modal -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="js/jquery-3.2.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script> 	
+    </body>
+</html>
