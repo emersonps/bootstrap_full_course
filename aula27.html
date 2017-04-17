@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Curso de Bootstrap 3</title>
+        <!-- define a viewport-->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- Para resolver problemas de Encoding -->
+        <meta charset="utf-8">
+        <!-- adicionar CSS Bootstrap localmente -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="all">
+        <!-- CSS personalizado -->
+        <link href="css/estilo.css" rel="stylesheet" media="all">
+	</head>
+	<body>
+        <h1>Carousel</h1>
+        <!-- Alerts tem como finalidade dar um feedback ao usuário -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                   
+                   <div id="carousel01" class="carousel slide" data-ride="carousel" data-interval="2000"><!-- data-ride define o tipo carousel-->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel01" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel01" data-slide-to="1"></li>
+                            <li data-target="#carousel01" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <center><img src="img/foto01.jpg" width="90%" alt="Imagem CDZ 1"></center>
+
+                                <div class="carousel-caption">
+                                    <h3>Título da Imagem</h3>
+                                    <p>Texto referente a imagem</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <center><img src="img/foto02.jpg" width="90%" alt="Imagem CDZ 1"></center>
+
+                                <div class="carousel-caption">
+                                    <h3>Título da Imagem</h3>
+                                    <p>Texto referente a imagem</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <center><img src="img/foto03.jpg" width="90%" alt="Imagem CDZ 1">
+                                    <div class="carousel-caption">
+                                        <h3>Título da Imagem</h3>
+                                        <p>Texto referente a imagem</p>
+                                    </div>
+                            </div></center>
+                        </div>  
+
+                        <a class="left carousel-control" href="#carousel01" role="button" data-slide="prev"><!-- Prev = anterior-->
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+
+                        <a class="right carousel-control" href="#carousel01" role="button" data-slide="next"><!-- Prev = anterior-->
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                   </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="js/jquery-3.2.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script> 	
+    </body>
+</html>

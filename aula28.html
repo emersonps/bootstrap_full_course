@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Curso de Bootstrap 3</title>
+        <!-- define a viewport-->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!-- Para resolver problemas de Encoding -->
+        <meta charset="utf-8">
+        <!-- adicionar CSS Bootstrap localmente -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="all">
+        <!-- CSS personalizado -->
+        <link href="css/estilo.css" rel="stylesheet" media="all">
+	</head>
+	<body>
+        <h1>Tooltips e Popovers</h1>
+        <!-- Alerts tem como finalidade dar um feedback ao usuário -->
+
+        <h1>Tooltips</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                   <!--Obs.: Criar função no arquivo js/main.js com a chamada da classe TTP -->
+                   <button type="button" class="btn btn-default ttp" data-toggle="tooltip" data-placement="left" title="Tooltip posicionado a esquerda">Tooltip 1 - Left</button>
+
+                   <button type="button" class="btn btn-default ttp" data-toggle="tooltip" data-placement="bottom" title="Tooltip posicionado a direita">Tooltip 1 - Left</button>
+
+                   <button type="button" class="btn btn-default ttp" data-toggle="tooltip" data-placement="right" title="Tooltip posicionado abaixo">Tooltip 1 - Left</button>
+
+                   <button type="button" class="btn btn-default ttp" data-toggle="tooltip" data-placement="top">Tooltip 1 - Left</button><!-- as propriedades podem ser definidas direto na função -->
+                </div>
+            </div>
+        </div>
+
+        <h1>Popovers</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                   <!--Obs.: Criar função no arquivo js/main.js com a chamada da classe TTP -->
+                   
+                   <button type="button" class="btn btn-default ppv" data-toggle="popover" data-placement="left" data-content="Conteúdo do Popover" data-container="body"><!-- data-container= indicar onde iremos colocar esse objeto -->Popover 2 </button>
+
+                   <button type="button" class="btn btn-default ppv" data-toggle="popover" data-placement="right" data-content="Conteúdo do Popover" data-container="body" title="Titulo do Popover 2"><!-- data-container= indicar onde iremos colocar esse objeto -->Popover 2 </button>
+
+                   <button type="button" class="btn btn-default ppv" data-toggle="popover" data-placement="top" data-content="Conteúdo do Popover" data-container="body" title="Titulo do Popover 2"><!-- data-container= indicar onde iremos colocar esse objeto -->Popover 3 </button>
+
+                   <button type="button" class="btn btn-default ppv" data-toggle="popover" data-placement="bottom" data-content="Conteúdo do Popover" data-container="body" title="Titulo do Popover 2"><!-- data-container= indicar onde iremos colocar esse objeto -->Popover 4 </button>
+
+                   
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="js/jquery-3.2.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script> 	
+    </body>
+</html>

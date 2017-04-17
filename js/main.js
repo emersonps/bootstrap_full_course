@@ -7,4 +7,17 @@ $(function(){
 	setTimeout(function(){
 		$("#modal01").modal("hide"); //fechar o modal automaticamente
 	}, 3000);
+
+	$(".ttp").tooltip({
+		animation:false,
+		delay: {show : 1000, hide: 5000},
+		title: "Titulo Padrão",
+		triger: 'click'
+	});
+
+	$(".ppv").popover({
+		title: "Titulo do popover",
+		trigger: "hover focus",
+		delay: {show : 1000, hide: 5000},
+	});
 });
