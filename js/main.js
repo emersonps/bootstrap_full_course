@@ -20,4 +20,16 @@ $(function(){
 		trigger: "hover focus",
 		delay: {show : 1000, hide: 5000},
 	});
+
+	$(".btnjs").button();
+
+	$("#troca-estado").click(function(){
+		var btn = $(this);
+		btn.button("loading");
+		
+		setTimeout(function(){
+			btn.button("reset");
+		}, 3000);
+	});
+	
 });
